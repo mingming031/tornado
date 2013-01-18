@@ -1,0 +1,14 @@
+<html>
+    <body>
+        
+        {% for imagic in imagiclist %}
+            <img src="/static/imagicfile/{{imagic}}" width = "200" height = "200">
+            {% if (i == 5)%}
+                <br />
+                {% i = 0 %}
+            {%else %}
+                {% i = i + 1 %}
+        {% end %}
+    </body>
+
+</html>
